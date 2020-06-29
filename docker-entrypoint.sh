@@ -25,8 +25,9 @@ file_env() {
 
 if [ ! -e matomo.php ]; then
 	tar cf - --one-file-system -C /usr/src/matomo . | tar xf -
-	chown -R www-data .
 fi
+
+chown -R www-data .
 
 envs=(
 		MATOMO_DATABASE_HOST
