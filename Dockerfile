@@ -1,4 +1,4 @@
-FROM matomo:3.14.0-apache
+FROM matomo:3.14.1-apache
 
 RUN apt-get install -y --no-install-recommends bash
 
